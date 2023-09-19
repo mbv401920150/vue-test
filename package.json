@@ -1,0 +1,42 @@
+{
+  "name": "admin-portal",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "productName": "Admin Portal",
+  "author": "DCU",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "test": "echo \"No test specified\" && exit 0",
+    "runSandbox": "set DCU_ENV=sandbox && quasar dev",
+    "runDev": "set DCU_ENV=development && quasar dev",
+    "runQa": "set DCU_ENV=qa && quasar dev",
+    "runStage": "set DCU_ENV=stage & quasar dev",
+    "runProd": "set DCU_ENV=production && quasar dev",
+    "build": "set DCU_ENV=qa && quasar build"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.4",
+    "axios": "^1.2.1",
+    "pinia": "^2.0.11",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^3.3.1",
+    "@quasar/app-vite": "^1.3.0",
+    "autoprefixer": "^10.4.2",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-vue": "^9.0.0"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
